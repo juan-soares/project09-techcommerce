@@ -15,7 +15,7 @@
 
 ## Description
 
-Projeto para prática de desenvolvimento web Front-end, utilizando HTML, CSS e JavaScript. Consiste em um E-Commerce ficiticio que comercializa produtos representando as áreas do desenvolvimento web. Contém uma lista de produtos exibidas dinamicamente a partir de variaveis.
+Projeto para prática de desenvolvimento web Front-end, utilizando HTML, CSS e JavaScript. Consiste em um E-Commerce ficiticio que comercializa produtos representando as áreas do desenvolvimento web. Contém uma lista de produtos que são renderizados dinamicamente na página.
 
 ## Demo
 
