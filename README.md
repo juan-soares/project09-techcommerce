@@ -27,7 +27,9 @@ Projeto para prática de desenvolvimento web Front-end, utilizando HTML, CSS e J
 
 ## Features
 
-- Favicon;
+- Favicon,
+- Renderização dinâmica através de JavaScript;
+- Ícone de biblioteca externa via CDN (Font Awesome);
 - Design Responsivo.
 
 ## How to use
