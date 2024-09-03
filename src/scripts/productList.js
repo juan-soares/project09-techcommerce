@@ -1,3 +1,5 @@
+import { addProductToCart } from "./cart.js";
+
 const productList = [
   {
     id: 1,
@@ -27,10 +29,16 @@ export default function generateCards() {
     <p>${product.brand}</p>
     <p>${product.title}</p>
     <p>$${product.cost}</p>
-    <button>Adicionar</button>
+    <button id="btn-add-to-cart-${product.id}">Adicionar</button>
     </div>
     `;
-
     htmlProductList.innerHTML += productCard;
+  }
+
+  for (const product of productList) {
+    const htmlBtnAddToCart = document.getElementById(
+      `btn-add-to-cart-${product.id}`
+    );
+    htmlBtnAddToCart.addEventListener("click", () => addProductToCart(product));
   }
 }
