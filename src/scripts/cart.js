@@ -2,10 +2,16 @@ const htmlCart = document.getElementById("cart");
 const htmlBtnOpenCart = document.getElementById("btn-open-cart");
 const htmlBtnCloseCart = document.getElementById("btn-close-cart");
 
-htmlBtnOpenCart.addEventListener("click", () => {
-  console.log("oi");
-});
+function toggleCartVisibility() {
+  htmlCart.classList.toggle("cart--visible");
+}
 
-htmlBtnCloseCart.addEventListener("click", () => {
-  console.log("ooi");
-});
+export default function cartListeners() {
+  htmlBtnOpenCart.addEventListener("click", () => {
+    toggleCartVisibility();
+  });
+
+  htmlBtnCloseCart.addEventListener("click", () => {
+    toggleCartVisibility();
+  });
+}

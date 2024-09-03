@@ -34,7 +34,10 @@
   </head>
   <body>
     <header>
-      <img src="./public/assets/img/" alt="Logotipo da marca TechCommerce." />
+      <img
+        src="./public/assets/img/logo.png"
+        alt="Logotipo da marca TechCommerce."
+      />
       <div>
         <button><i class="fa-solid fa-user"></i></button>
         <button id="btn-open-cart">
@@ -42,7 +45,7 @@
         </button>
       </div>
     </header>
-    <aside id="cart">
+    <aside id="cart" class="cart">
       <h2>Meu Carrinho</h2>
       <section id="cart-products">
         <p>Total <strong id="cart-total">$0,00</strong></p>
@@ -54,7 +57,6 @@
     <main>
       <section id="product-list"></section>
     </main>
-    <script src="./src/scripts/productList.js"></script>
-    <script src="./src/scripts/cart.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>
