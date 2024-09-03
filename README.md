@@ -28,8 +28,10 @@ Projeto para prática de desenvolvimento web Front-end, utilizando HTML, CSS e J
 ## Features
 
 - Favicon,
-- Renderização dinâmica através de JavaScript;
-- Ícone de biblioteca externa via CDN (Font Awesome);
+- Modularização de arquivos JavaScript;
+- Ícones de biblioteca externa via CDN (Font Awesome);
+- Renderização de conteúdo na página através de JavaScript;
+- Lista lateral de itens no Carrinho, com visibilidade é controlada por botões;
 - Design Responsivo.
 
 ## How to use
