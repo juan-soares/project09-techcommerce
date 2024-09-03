@@ -30,8 +30,8 @@ Projeto para prática de desenvolvimento web Front-end, utilizando HTML, CSS e J
 - Favicon,
 - Modularização de arquivos JavaScript;
 - Ícones de biblioteca externa via CDN (Font Awesome);
-- Renderização de conteúdo na página através de JavaScript;
-- Lista lateral de itens no Carrinho, com visibilidade é controlada por botões;
+- Renderização de uma lista de produtos a partir do consumo de dados dinâmicos;
+- Lista lateral de itens no Carrinho, contendo visibilidade controlada por botões, a lista de produtos selecionados e o valor total dos produtos que é atualizado dinamicamente;
 - Design Responsivo.
 
 ## How to use

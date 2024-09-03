@@ -1,5 +1,3 @@
-import generateCards from "./productList.js";
-import cartListeners from "./cart.js";
+import renderProductList from "./cart.js";
 
-generateCards();
-cartListeners();
+renderProductList();

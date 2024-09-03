@@ -1,44 +1,16 @@
-import { addProductToCart } from "./cart.js";
+import dataProductList from "../lib/data.js";
 
-const productList = [
-  {
-    id: 1,
-    title: "Casaco",
-    brand: "Front-End",
-    cost: 0,
-    image: "front-end.jpg",
-  },
-  {
-    id: 2,
-    title: "Casaco",
-    brand: "Back-End",
-    cost: 0,
-    image: "back-end.jpg",
-  },
-];
+const htmlMainContent = document.querySelector("main");
 
-const htmlProductList = document.getElementById("product-list");
+function createProductCart(productInfo) {
+  const htmlProductList = document.createElement("ul");
+  const productCard = document.createElement("li");
 
-export default function generateCards() {
-  for (const product of productList) {
-    const productCard = `<div id="product-info-${product.id}">
-    <img
-      src="./public/assets/img/${product.image}"
-      alt="Imagem do produto ${product.title}."
-    />
-    <p>${product.brand}</p>
-    <p>${product.title}</p>
-    <p>$${product.cost}</p>
-    <button id="btn-add-to-cart-${product.id}">Adicionar</button>
-    </div>
-    `;
-    htmlProductList.innerHTML += productCard;
-  }
+  htmlProductList.appendChild(productCard);
+}
 
-  for (const product of productList) {
-    const htmlBtnAddToCart = document.getElementById(
-      `btn-add-to-cart-${product.id}`
-    );
-    htmlBtnAddToCart.addEventListener("click", () => addProductToCart(product));
+export default function renderProductList() {
+  for (const product in dataProductList) {
+    createProductCart(product);
   }
 }

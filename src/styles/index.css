@@ -16,3 +16,9 @@
 .cart--visible {
   display: block;
 }
+
+.cart__product-list {
+  background-color: yellowgreen;
+  max-height: 80%;
+  overflow: scroll;
+}
